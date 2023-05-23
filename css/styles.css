@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+main{
+    display: flex;
+    background-color: rgb(117, 143, 148);
+    height: 100vh;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 1000px;
+}
+
+.imagenes img{
+    width: 950px;
+    height: 300px;
+}
+
+.software{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    font-size: 40px;
+}
+
+.software img{
+    width: 300px;
+    height: 200px;
+}
+
+.software h1{
+    font-size: 110px;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    main{
+        flex-direction: column-reverse;
+    }
+
+    .imagenes{
+        width: 100%;
+    }
+
+    .software{
+        width: 100%;
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    main{
+        flex-direction: column-reverse;
+    }
+
+    .imagenes{
+        width: 100%;
+        height: 700px;
+    }
+
+    .imagenes img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .software{
+        width: 100%;
+        height: 550px;
+        font-size: 20px;
+    }
+
+    .software h1{
+        font-size: 40px;
+    }
+
+    .software img{
+        width: 200px;
+        height: 100px;
+    }
+}
